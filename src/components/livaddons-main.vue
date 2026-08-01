@@ -10,7 +10,6 @@ import { Icon } from "@iconify/vue"
         </div>
         <div class="navbar">
             <div class="title">
-                <span>LivvyaAddons</span>
             </div>
         </div>
         <div class="hero">
@@ -19,10 +18,12 @@ import { Icon } from "@iconify/vue"
             <div class="sources">
                 <a href="https://modrinth.com/mod/livaddons">Download on Modrinth (soon)</a>
                 <a href="https://modrinth.com/mod/livaddons">Download on GitHub</a>
+                
             </div>
         </div>
         <div class="content">
-
+            <img class="worldmap" src="../assets/world-map.svg"/>
+            <span>MADE  IN  POLAND</span>
         </div>
         <div class="footer">
 
@@ -30,8 +31,23 @@ import { Icon } from "@iconify/vue"
     </div>
 </template>
 <style scoped>
+.content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(116, 116, 116);
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    
+}
+.worldmap {
+    width: 70%;
+    
+}
 .discord {
-    background-color: #252a66;
+    background-color:  #ed96f8a4;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
@@ -43,11 +59,11 @@ import { Icon } from "@iconify/vue"
 .sources {
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     margin-top: 10px;
     a {
-        color: white;
-        background-color: rgb(26, 26, 26);
+        color: #ed96f8a4;
+        border: 1px solid  #ed96f8a4;
         text-decoration: none;
         padding: 5px;
         border-radius: 5px;
